@@ -1,15 +1,45 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ButtonPrimary>
+    Button label
+  </ButtonPrimary>
+  <HeadingSmall>
+    Heading small
+  </HeadingSmall>
+  <SubtitleSmall>
+    Subtitle small
+  </SubtitleSmall>
+  <Shape>
+    <Paragraph>
+      Lorem ipsum etc
+    </Paragraph>
+  </Shape>
+  <br>
+  <CardContent
+    title="Card Content Title"
+    subtitle="Card Content Subtitle"
+    content="Card Content Content"
+    buttonLabel="Card Content Button Label"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ButtonPrimary from './components/ButtonPrimary'
+import HeadingSmall from './components/HeadingSmall'
+import SubtitleSmall from './components/SubtitleSmall'
+import Paragraph from './components/Paragraph'
+import Shape from './components/Shape'
+import CardContent from './components/CardContent'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ButtonPrimary,
+    HeadingSmall,
+    SubtitleSmall,
+    Paragraph,
+    Shape,
+    CardContent
   }
 }
 </script>
