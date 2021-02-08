@@ -1,12 +1,20 @@
 <template>
-  <div class="button-primary">
+  <a class="button-primary" :href="link" target="_blank" v-if="link">
+    <slot />
+  </a>
+  <div class="button-primary" v-else>
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ButtonPrimary'
+  name: 'ButtonPrimary',
+  props: {
+    link: {
+      type: String
+    }
+  }
 }
 </script>
 
@@ -15,6 +23,7 @@ export default {
   @import "../../../calamity-design-tokens/build/scss/_variables.scss";
   .button-primary {
     display: inline-flex;
+    text-decoration: none;
 
     font-size: $font-size-sm;
     line-height: $line-height-tight;

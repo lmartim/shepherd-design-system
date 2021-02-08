@@ -14,6 +14,8 @@ export default {
 <style lang="scss" scoped>
   @import "../../../calamity-design-tokens/build/scss/_variables.scss";
   .subtitle-small {
+    text-align: left;
+    
     font-size: $font-size-md;
     line-height: $line-height-medium;
 

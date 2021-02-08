@@ -20,6 +20,7 @@
     subtitle="Card Content Subtitle"
     content="Card Content Content"
     buttonLabel="Card Content Button Label"
+    buttonLink="http://www.pudim.com.br"
   />
 </template>
 

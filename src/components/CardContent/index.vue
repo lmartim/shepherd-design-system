@@ -1,9 +1,9 @@
 <template>
   <Shape class="card-content">
     <HeadingSmall>{{title}}</HeadingSmall>
-    <SubtitleSmall>{{subtitle}}</SubtitleSmall>
+    <SubtitleSmall v-if="subtitle">{{subtitle}}</SubtitleSmall>
     <Paragraph>{{content}}</Paragraph>
-    <ButtonPrimary>{{buttonLabel}}</ButtonPrimary>
+    <ButtonPrimary :link="buttonLink">{{buttonLabel}}</ButtonPrimary>
   </Shape>
 </template>
 
@@ -22,8 +22,7 @@ export default {
       default: 'Heading SM'
     },
     subtitle: {
-      type: String,
-      default: 'Subtitle SM'
+      type: String
     },
     content: {
       type: String,
@@ -32,6 +31,9 @@ export default {
     buttonLabel: {
       type: String,
       default: 'Button label'
+    },
+    buttonLink: {
+      type: String
     }
   },
   components: {
