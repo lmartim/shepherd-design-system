@@ -12,7 +12,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  @import "../../../calamity-design-tokens/build/scss/_variables.scss";
+  @import "@bit/lmartim.calamity._variables";
   .shape {
     display: inline-flex;
     

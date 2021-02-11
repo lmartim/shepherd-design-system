@@ -1,0 +1,18 @@
+{
+  "name": "@bit/lmartim.calamity._variables",
+  "version": "1.0.0",
+  "homepage": "https://bit.dev/lmartim/calamity/_variables",
+  "main": "_variables.scss",
+  "componentId": {
+    "scope": "lmartim.calamity",
+    "name": "_variables",
+    "version": "1.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {}
+  }
+}
